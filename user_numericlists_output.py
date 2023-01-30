@@ -1,4 +1,4 @@
-Task 3 - Numeric Lists
+"""Task 3 - Numeric Lists
 list1 = [235, 500, 1164, 660, 15362, 223, 2003, 990, 2323, 531, 736, 127, 674, 9735, 673, 1246, 12452, 1222, 997, 174, 292, 986, 674, 872, 957]
 listx = =[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 listy = [20, 40, 62, 83, 95, 121, 139, 156, 184, 210]
@@ -51,4 +51,4 @@ Previous values divided by the max value in the list: [0.25, 0.5, 0.75, 1.0]
 
 =====================
 End of numeric lists
-(base) Ashleys-MBP:datafun-03-datatypes ashleymersman$ 
+"""
