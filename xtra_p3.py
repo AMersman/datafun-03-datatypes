@@ -31,25 +31,20 @@ with open("text_juliuscaesar.txt", "r") as f2:
 # hint: use sorted() to sort the list
 # hint: use set() to remove duplicates
 # name them wordset1 and wordset2
-wordset1 = set()  # TODO fix this line
-wordset2 = set()  # TODO fix this line
+wordset1 = set(wordlist1)  # TODO fix this line
+wordset2 = set(wordlist2)  # TODO fix this line
 
 
 # initialize a variable maxlen = 10
-maxlen = 1  # TODO fix this line
+maxlen = 10  # TODO fix this line
 
 # use a list comprension to get a list of words longer than 10
-# for word in wordset1
-# That is:
-# in a list (e.g. square brackets)
-# say "[Give me word (for each word in wordset1)
-#      if len(word) is greater than maxlen]"
-# then convert the list to a set to we can take the intersection
-# hint: use set()
-# name them longwordset1 and longwordset2
 
-longwordset1 = set()  # TODO: fix this line
-longwordset2 = set()  # TODO: fix this line
+
+# TODO: fix this line
+longwordset1 = set([word for word in wordset1 if len(word) > 10])
+# TODO: fix this line
+longwordset2 = set([word for word in wordset2 if len(word) > 10])
 
 # find the intersection of the two sets
 # that is, the words in both longwordset1 1 & longwordset2
@@ -57,9 +52,16 @@ longwordset2 = set()  # TODO: fix this line
 longwords = longwordset1 & longwordset2
 
 # print the length of the sets and the list
-print(len(longwordset1))
-print(len(longwordset2))
-print(len(longwords))
+divider = "**********************"
+print()
+print(divider)
+print()
+print(
+    f"The number of words longer than 10 characters in Hamlet: {len(longwordset1)}.")
+print(
+    f"The number of words longer than 10 character in Julius Caesar: {len(longwordset2)}.")
+print(
+    f"The number of words longer than 10 characters in both plays: {len(longwords)}.")
 print()
 print(f"{sorted(longwords) = }")
 print()
@@ -68,3 +70,6 @@ print()
 print("TESTING...if nothing prints before the testing is done, you passed!")
 doctest.testmod()
 print("TESTING DONE")
+print()
+print(divider)
+print()

@@ -1,0 +1,14 @@
+"""
+**********************
+
+The number of words longer than 10 characters in Hamlet: 415.
+The number of words longer than 10 character in Julius Caesar: 197.
+The number of words longer than 10 characters in both plays: 13.
+
+sorted(longwords) = ['conference.', 'conscience;', 'consequence;', 'constantly.', 'corruption,', 'countenance', 'countenance,', 'enterprise,', 'honourable.', 'immediately.', 'replication', 'themselves,', 'threatening']
+
+TESTING...if nothing prints before the testing is done, you passed!
+TESTING DONE
+
+**********************
+"""
